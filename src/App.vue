@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" :class="scrolled ? 'scroll' : ''">
       <div class="container">
         <router-link to="/" class="navbar-brand pb-3">
           <img src="./assets/Joblancer-logo.png" alt="" width="36" heighta="36" class="d-inline-block align-text-bottom me-2">
@@ -37,12 +37,45 @@
   <router-view/>
 </template>
 
+<script>
+export default {
+  data(){
+    return{
+      scrolled: false
+    }
+  },
+  methods: {
+    handleScroll () {
+      this.scrolled = window.scrollY > 0;
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+}
+</script>
+
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
 }
 
+p{
+  color: #69737e;
+}
+h1 h2 h3 h4 h5 h6{
+  color: #0B132A;
+}
+a{
+  text-decoration: none;
+  color: #F53838;
+}
+.scroll {
+  box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
+}
 </style>

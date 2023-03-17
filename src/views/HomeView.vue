@@ -138,7 +138,8 @@ export default {
 .iconhero{
   width: 36px;
   height: 36px;
-  background-color: #ccc3ff;
+  color: #F53838;
+  background-color: #FFECEC;
   padding: 12px 12px;
   border-radius: 50%;
 }
@@ -152,5 +153,12 @@ export default {
   width: 80px;
   height: 80px;
   border-radius: 50%;
+}
+.btn-primary{
+  background-color: #F53838;
+  border: none;
+}
+.btn-primary:hover{
+  background-color: #cc2525;
 }
 </style>

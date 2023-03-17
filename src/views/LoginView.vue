@@ -18,7 +18,7 @@
                         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukan Password Valid Kamu">
                     </div>
                     <div class="mb-3">
-                        <router-link to="/" class="d-grid gap-2">
+                        <router-link to="/admin" class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </router-link>
                         
