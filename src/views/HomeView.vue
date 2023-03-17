@@ -24,11 +24,11 @@
                 <p class="mt-3">500+ Pengguna Aktif</p>
               </div>
               <div class="col-md-4 col-sm-12">
-                <span><font-awesome-icon icon="fa-solid fa-user-secret" class="iconhero"/></span>
+                <span><font-awesome-icon icon="fa-solid fa-briefcase" class="iconhero"/></span>
                 <p class="mt-3">200+ Pekerjaan</p>
               </div>
               <div class="col-md-4">
-                <span><font-awesome-icon icon="fa-solid fa-user-secret" class="iconhero"/></span>
+                <span><font-awesome-icon icon="fa-solid fa-sack-dollar" class="iconhero"/></span>
                 <p class="mt-3">Penghasilan++</p>
               </div>
             </div>

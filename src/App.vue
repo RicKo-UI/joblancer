@@ -75,6 +75,11 @@ a{
   text-decoration: none;
   color: #F53838;
 }
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: #cc2525;
+}
 .scroll {
   box-shadow: 1px 2px 18px rgba(0, 0, 0, 0.1);
 }
